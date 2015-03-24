@@ -1,0 +1,13 @@
+<h3>{{ __SELF__.TestStr }}</h3>
+
+<div id="target-{{ __SELF__.Color }}">
+    
+<h3 style="background-color:{{ __SELF__.Color }}; color:#ffffff;">{{ __SELF__.Color }}</h3>
+<form method="POST" 
+   data-request="onChangeColor" 
+   data-request-update="'{{__SELF__}}::main':'#target-{{ __SELF__.Color }}'">
+   
+      <button type="submit" class="btn btn-default">Change Color</button>
+</form>
+
+</div>

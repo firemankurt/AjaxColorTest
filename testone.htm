@@ -1,0 +1,14 @@
+title = "TestOne"
+url = "/testone"
+layout = "default"
+hidden = "0"
+
+[PartOne PartOneR]
+Color = "red"
+
+[PartOne PartOneY]
+Color = "yellow"
+==
+{% component 'PartOneR' %}
+<hr />
+{% component 'PartOneY' %}
